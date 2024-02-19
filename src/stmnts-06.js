@@ -21,7 +21,7 @@ function isString(str) {
  * @returns {boolean}  - true if str is blank (empty)
  */
 function isBlank(str) {
-  return str.trim() === '';
+  return str === '';
 }
 
 /**

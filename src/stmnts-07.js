@@ -116,8 +116,8 @@ function gradeGenerator(score) {
  */
 function getGrade(name, score) {
   const grade = gradeGenerator(score);
-  const article = grade === 'A' ? 'an' : 'a';
-  return `${name} got ${article} ${grade}`;
+  const article = ['A', 'E', 'I', 'O', 'U'].includes(grade[0].toUpperCase()) ? 'an' : 'a';
+  return `${name} got ${article} ${grade === 'A' ? 'an' : 'a'} ${grade}`;
 }
 
 module.exports = {
